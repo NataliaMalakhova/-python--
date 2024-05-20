@@ -1,5 +1,6 @@
 from faker import Faker
 import random
+from logger import logger
 
 
 def generate_employee_list(num_employees):
@@ -25,8 +26,9 @@ def generate_employee_list(num_employees):
 
 
 employee_list = generate_employee_list(10)
+path_get_employees = 'get_employees.log'
 
 
+@logger(path_get_employees)
 def get_employees():
     return employee_list
-
