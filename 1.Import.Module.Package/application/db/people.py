@@ -30,5 +30,3 @@ employee_list = generate_employee_list(10)
 def get_employees():
     return employee_list
 
-
-print(get_employees())
