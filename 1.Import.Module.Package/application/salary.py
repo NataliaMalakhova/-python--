@@ -1,3 +1,9 @@
+from logger import logger
+
+path_calculate_salary = 'calculate_salary.log'
+
+
+@logger(path_calculate_salary)
 def calculate_salary(employee_list, employee_id, coefficient=1.1):
     """
     Функция для вычисления зарплаты конкретного сотрудника с применением коэффициента.
