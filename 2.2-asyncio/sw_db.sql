@@ -78,87 +78,87 @@ ALTER TABLE ONLY public.characters ALTER COLUMN id SET DEFAULT nextval('public.c
 --
 
 COPY public.characters (id, birth_year, eye_color, films, gender, hair_color, height, homeworld, mass, name, skin_color, species, starships, vehicles) FROM stdin;
-1	19BBY	blue	1, 2, 3, 6	male	blond	172	https://swapi.dev/api/planets/1/	77	Luke Skywalker	fair		12, 22	14, 30
-3	33BBY	red	1, 2, 3, 4, 5, 6	n/a	n/a	96	https://swapi.dev/api/planets/8/	32	R2-D2	white, blue	2		
-6	52BBY	blue	1, 5, 6	male	brown, grey	178	https://swapi.dev/api/planets/1/	120	Owen Lars	light			
-9	24BBY	brown	1	male	black	183	https://swapi.dev/api/planets/1/	84	Biggs Darklighter	light		12	
-2	112BBY	yellow	1, 2, 3, 4, 5, 6	n/a	n/a	167	https://swapi.dev/api/planets/1/	75	C-3PO	gold	2		
-4	41.9BBY	yellow	1, 2, 3, 6	male	none	202	https://swapi.dev/api/planets/1/	136	Darth Vader	white		13	
-7	47BBY	blue	1, 5, 6	female	brown	165	https://swapi.dev/api/planets/1/	75	Beru Whitesun lars	light			
-5	19BBY	brown	1, 2, 3, 6	female	brown	150	https://swapi.dev/api/planets/2/	49	Leia Organa	light			30
-8	unknown	red	1	n/a	n/a	97	https://swapi.dev/api/planets/1/	32	R5-D4	white, red	2		
-12	64BBY	blue	1, 6	male	auburn, grey	180	https://swapi.dev/api/planets/21/	unknown	Wilhuff Tarkin	fair			
-10	57BBY	blue-gray	1, 2, 3, 4, 5, 6	male	auburn, white	182	https://swapi.dev/api/planets/20/	77	Obi-Wan Kenobi	fair		48, 59, 64, 65, 74	38
-11	41.9BBY	blue	4, 5, 6	male	blond	188	https://swapi.dev/api/planets/1/	84	Anakin Skywalker	fair		39, 59, 65	44, 46
-13	200BBY	blue	1, 2, 3, 6	male	brown	228	https://swapi.dev/api/planets/14/	112	Chewbacca	unknown	3	10, 22	19
-14	29BBY	brown	1, 2, 3	male	brown	180	https://swapi.dev/api/planets/22/	80	Han Solo	fair		10, 22	
-15	44BBY	black	1	male	n/a	173	https://swapi.dev/api/planets/23/	74	Greedo	green	4		
-19	unknown	blue	1	male	brown	180	https://swapi.dev/api/planets/26/	110	Jek Tono Porkins	fair		12	
-18	21BBY	hazel	1, 2, 3	male	brown	170	https://swapi.dev/api/planets/22/	77	Wedge Antilles	fair		12	14
-16	600BBY	orange	1, 3, 4	hermaphrodite	n/a	175	https://swapi.dev/api/planets/24/	1,358	Jabba Desilijic Tiure	green-tan, brown	5		
-22	31.5BBY	brown	2, 3, 5	male	black	183	https://swapi.dev/api/planets/10/	78.2	Boba Fett	fair		21	
-21	82BBY	yellow	2, 3, 4, 5, 6	male	grey	170	https://swapi.dev/api/planets/8/	75	Palpatine	pale			
-24	53BBY	red	2	male	none	190	https://swapi.dev/api/planets/29/	113	Bossk	green	7		
-27	41BBY	orange	3	male	none	180	https://swapi.dev/api/planets/31/	83	Ackbar	brown mottle	8		
-26	37BBY	blue	2	male	none	175	https://swapi.dev/api/planets/6/	79	Lobot	light			
-25	31BBY	brown	2, 3	male	black	177	https://swapi.dev/api/planets/30/	79	Lando Calrissian	dark		10	
-20	896BBY	brown	2, 3, 4, 5, 6	male	white	66	https://swapi.dev/api/planets/28/	17	Yoda	green	6		
-23	15BBY	red	2	none	none	200	https://swapi.dev/api/planets/28/	140	IG-88	metal	2		
-30	8BBY	brown	3	male	brown	88	https://swapi.dev/api/planets/7/	20	Wicket Systri Warrick	brown	9		
-29	unknown	brown	3	male	brown	unknown	https://swapi.dev/api/planets/28/	unknown	Arvel Crynyd	fair		28	
-28	48BBY	blue	3	female	auburn	150	https://swapi.dev/api/planets/32/	unknown	Mon Mothma	fair			
-31	unknown	black	3	male	none	160	https://swapi.dev/api/planets/33/	68	Nien Nunb	grey	10	10	
-34	91BBY	blue	4	male	blond	170	https://swapi.dev/api/planets/9/	unknown	Finis Valorum	fair			
-32	92BBY	blue	4	male	brown	193	https://swapi.dev/api/planets/28/	89	Qui-Gon Jinn	fair			38
-33	unknown	red	4, 5, 6	male	none	191	https://swapi.dev/api/planets/18/	90	Nute Gunray	mottled green	11		
-36	52BBY	orange	4, 5	male	none	196	https://swapi.dev/api/planets/8/	66	Jar Jar Binks	orange	12		
-37	unknown	orange	4	male	none	224	https://swapi.dev/api/planets/8/	82	Roos Tarpals	grey	12		
-35	46BBY	brown	4, 5, 6	female	brown	185	https://swapi.dev/api/planets/8/	45	Padmé Amidala	light		39, 49, 64	
-38	unknown	orange	4	male	none	206	https://swapi.dev/api/planets/8/	unknown	Rugor Nass	green	12		
-40	unknown	yellow	4, 5	male	black	137	https://swapi.dev/api/planets/34/	unknown	Watto	blue, grey	13		
-39	unknown	blue	4	male	brown	183	https://swapi.dev/api/planets/8/	unknown	Ric Olié	fair		40	
-42	62BBY	brown	4	male	black	183	https://swapi.dev/api/planets/8/	unknown	Quarsh Panaka	dark			
-43	72BBY	brown	4, 5	female	black	163	https://swapi.dev/api/planets/1/	unknown	Shmi Skywalker	fair			
-41	unknown	orange	4	male	none	112	https://swapi.dev/api/planets/35/	40	Sebulba	grey, red	14		
-45	unknown	pink	3	male	none	180	https://swapi.dev/api/planets/37/	unknown	Bib Fortuna	pale	15		
-44	54BBY	yellow	4	male	none	175	https://swapi.dev/api/planets/36/	80	Darth Maul	red	22	41	42
-50	unknown	orange	4	male	none	163	https://swapi.dev/api/planets/41/	65	Ben Quadinaros	grey, green, yellow	19		
-46	48BBY	hazel	4, 5, 6	female	none	178	https://swapi.dev/api/planets/37/	55	Ayla Secura	blue	15		
-49	unknown	black	4	male	none	122	https://swapi.dev/api/planets/40/	unknown	Gasgano	white, blue	18		
-47	unknown	unknown	4	male	none	79	https://swapi.dev/api/planets/38/	15	Ratts Tyerel	grey, blue	16		
-51	72BBY	brown	4, 5, 6	male	none	188	https://swapi.dev/api/planets/42/	84	Mace Windu	dark			
-52	92BBY	yellow	4, 5, 6	male	white	198	https://swapi.dev/api/planets/43/	82	Ki-Adi-Mundi	pale	20		
-48	unknown	yellow	4	male	none	94	https://swapi.dev/api/planets/39/	45	Dud Bolt	blue, grey	17		
-54	unknown	brown	4, 6	male	black	171	https://swapi.dev/api/planets/45/	unknown	Eeth Koth	brown	22		
-53	unknown	black	4, 5, 6	male	none	196	https://swapi.dev/api/planets/44/	87	Kit Fisto	green	21		
-55	unknown	blue	4, 6	female	none	184	https://swapi.dev/api/planets/9/	50	Adi Gallia	dark	23		
-57	unknown	yellow	4	male	none	264	https://swapi.dev/api/planets/48/	unknown	Yarael Poof	white	25		
-59	unknown	blue	4, 5	male	none	196	https://swapi.dev/api/planets/50/	unknown	Mas Amedda	blue	27		
-62	82BBY	blue	5	male	brown	183	https://swapi.dev/api/planets/1/	unknown	Cliegg Lars	fair			
-61	unknown	brown	5	female	brown	157	https://swapi.dev/api/planets/8/	unknown	Cordé	light			
-58	22BBY	black	4, 5, 6	male	none	188	https://swapi.dev/api/planets/49/	80	Plo Koon	orange	26	48	
-56	unknown	orange	4, 6	male	none	188	https://swapi.dev/api/planets/47/	unknown	Saesee Tiin	pale	24		
-64	58BBY	blue	5, 6	female	black	170	https://swapi.dev/api/planets/51/	56.2	Luminara Unduli	yellow	29		
-63	unknown	yellow	5, 6	male	none	183	https://swapi.dev/api/planets/11/	80	Poggle the Lesser	green	28		
-60	unknown	brown	5	male	black	185	https://swapi.dev/api/planets/8/	85	Gregar Typho	dark		39	
-65	40BBY	blue	5	female	black	166	https://swapi.dev/api/planets/51/	50	Barriss Offee	yellow	29		
-66	unknown	brown	5	female	brown	165	https://swapi.dev/api/planets/8/	unknown	Dormé	light	1		
-68	67BBY	brown	5, 6	male	black	191	https://swapi.dev/api/planets/2/	unknown	Bail Prestor Organa	tan	1		
-69	66BBY	brown	5	male	black	183	https://swapi.dev/api/planets/53/	79	Jango Fett	tan			
-78	unknown	black	5, 6	female	none	178	https://swapi.dev/api/planets/58/	57	Shaak Ti	red, blue, white	35		
-67	102BBY	brown	5, 6	male	white	193	https://swapi.dev/api/planets/52/	80	Dooku	fair	1		55
-75	unknown	red, blue	5, 6	female	none	96	https://swapi.dev/api/planets/28/	unknown	R4-P17	silver, red			
-77	unknown	gold	5	male	none	191	https://swapi.dev/api/planets/57/	unknown	San Hill	grey	34		
-79	unknown	green, yellow	6	male	none	216	https://swapi.dev/api/planets/59/	159	Grievous	brown, white	36	74	60
-81	unknown	brown	1, 6	male	brown	188	https://swapi.dev/api/planets/2/	79	Raymus Antilles	light			
-72	unknown	black	5	male	none	229	https://swapi.dev/api/planets/10/	88	Lama Su	grey	32		
-70	unknown	yellow	5	female	blonde	168	https://swapi.dev/api/planets/54/	55	Zam Wesell	fair, green, yellow	30		45
-73	unknown	black	5	female	none	213	https://swapi.dev/api/planets/10/	unknown	Taun We	grey	32		
-71	unknown	yellow	5	male	none	198	https://swapi.dev/api/planets/55/	102	Dexter Jettster	brown	31		
-74	unknown	blue	5	female	white	167	https://swapi.dev/api/planets/9/	unknown	Jocasta Nu	fair	1		
-76	unknown	unknown	5	male	none	193	https://swapi.dev/api/planets/56/	48	Wat Tambor	green, grey	33		
-80	unknown	blue	6	male	brown	234	https://swapi.dev/api/planets/14/	136	Tarfful	brown	3		
-82	unknown	white	5, 6	female	none	178	https://swapi.dev/api/planets/60/	48	Sly Moore	pale			
+9	24BBY	brown	A New Hope	male	black	183	Tatooine	84	Biggs Darklighter	light			
+30	8BBY	brown	Return of the Jedi	male	brown	88	Endor	20	Wicket Systri Warrick	brown	Ewok		
+5	19BBY	brown	A New Hope, The Empire Strikes Back, Return of the Jedi	female	brown	150	Alderaan	49	Leia Organa	light			Imperial Speeder Bike
+19	unknown	blue	A New Hope	male	brown	180	Bestine IV	110	Jek Tono Porkins	fair		X-wing	
+20	896BBY	brown	The Empire Strikes Back, Return of the Jedi, The Phantom Menace, Attack of the Clones, Revenge of the Sith	male	white	66	unknown	17	Yoda	green	Yoda's species		
+1	19BBY	blue	The Empire Strikes Back, Return of the Jedi	male	blond	172	Tatooine	77	Luke Skywalker	fair		X-wing, Imperial shuttle	Snowspeeder, Imperial Speeder Bike
+7	47BBY	blue	Revenge of the Sith	female	brown	165	Tatooine	75	Beru Whitesun lars	light			
+14	29BBY	brown	A New Hope, The Empire Strikes Back, Return of the Jedi	male	brown	180	Corellia	80	Han Solo	fair		Millennium Falcon, Imperial shuttle	
+6	52BBY	blue	A New Hope, Attack of the Clones, Revenge of the Sith	male	brown, grey	178	Tatooine	120	Owen Lars	light			
+10	57BBY	blue-gray	A New Hope, Attack of the Clones	male	auburn, white	182	Stewjon	77	Obi-Wan Kenobi	fair		Jedi starfighter, Trade Federation cruiser, Naboo star skiff, Jedi Interceptor, Belbullab-22 starfighter	Tribubble bongo
+27	41BBY	orange	Return of the Jedi	male	none	180	Mon Cala	83	Ackbar	brown mottle	Mon Calamari		
+33	unknown	red	The Phantom Menace, Attack of the Clones, Revenge of the Sith	male	none	191	Cato Neimoidia	90	Nute Gunray	mottled green	Neimodian		
+18	21BBY	hazel	A New Hope, The Empire Strikes Back, Return of the Jedi	male	brown	170	Corellia	77	Wedge Antilles	fair		X-wing	Snowspeeder
+35	46BBY	brown	The Phantom Menace, Attack of the Clones, Revenge of the Sith	female	brown	185	Naboo	45	Padmé Amidala	light		Naboo fighter, H-type Nubian yacht, Naboo star skiff	
+24	53BBY	red	The Empire Strikes Back	male	none	190	Trandosha	113	Bossk	green	Trandoshan		
+21	82BBY	yellow	The Empire Strikes Back, Return of the Jedi, The Phantom Menace, Attack of the Clones, Revenge of the Sith	male	grey	170	Naboo	75	Palpatine	pale			
+3	33BBY	red	A New Hope, The Empire Strikes Back, Return of the Jedi, The Phantom Menace, Revenge of the Sith	n/a	n/a	96	Naboo	32	R2-D2	white, blue	Droid		
+25	31BBY	brown	Return of the Jedi	male	black	177	Socorro	79	Lando Calrissian	dark		Millennium Falcon	
+22	31.5BBY	brown	The Empire Strikes Back, Return of the Jedi, Attack of the Clones	male	black	183	Kamino	78.2	Boba Fett	fair		Slave 1	
+23	15BBY	red	The Empire Strikes Back	none	none	200	unknown	140	IG-88	metal	Droid		
+15	44BBY	black	A New Hope	male	n/a	173	\N	74	Greedo	green	Rodian		
+12	64BBY	blue	Revenge of the Sith	male	auburn, grey	180	Eriadu	unknown	Wilhuff Tarkin	fair			
+4	41.9BBY	yellow	The Empire Strikes Back, Revenge of the Sith	male	none	202	Tatooine	136	Darth Vader	white		TIE Advanced x1	
+26	37BBY	blue	The Empire Strikes Back	male	none	175	Bespin	79	Lobot	light			
+36	52BBY	orange	The Phantom Menace, Attack of the Clones	male	none	196	Naboo	66	Jar Jar Binks	orange	Gungan		
+57	unknown	yellow	The Phantom Menace	male	none	264	Quermia	unknown	Yarael Poof	white	Quermian		
+13	200BBY	blue	A New Hope, The Empire Strikes Back, Return of the Jedi, Revenge of the Sith	male	brown	228	Kashyyyk	112	Chewbacca	unknown	Wookie	Millennium Falcon	AT-ST
+40	unknown	yellow	The Phantom Menace, Attack of the Clones	male	black	137	Toydaria	unknown	Watto	blue, grey	Toydarian		
+37	unknown	orange	The Phantom Menace	male	none	224	Naboo	82	Roos Tarpals	grey	Gungan		
+11	41.9BBY	blue	The Phantom Menace, Attack of the Clones, Revenge of the Sith	male	blond	188	Tatooine	84	Anakin Skywalker	fair		Trade Federation cruiser, Jedi Interceptor	Zephyr-G swoop bike, XJ-6 airspeeder
+28	48BBY	blue	Return of the Jedi	female	auburn	150	Chandrila	unknown	Mon Mothma	fair			
+32	92BBY	blue	The Phantom Menace	male	brown	193	unknown	89	Qui-Gon Jinn	fair			Tribubble bongo
+47	unknown	unknown	The Phantom Menace	male	none	79	Aleen Minor	15	Ratts Tyerel	grey, blue	Aleena		
+29	unknown	brown		male	brown	unknown	unknown	unknown	Arvel Crynyd	fair			
+41	unknown	orange	The Phantom Menace	male	none	112	Malastare	40	Sebulba	grey, red	Dug		
+59	unknown	blue	The Phantom Menace, Attack of the Clones	male	none	196	Champala	unknown	Mas Amedda	blue	Chagrian		
+46	48BBY	hazel	The Phantom Menace, Attack of the Clones, Revenge of the Sith	female	none	178	Ryloth	55	Ayla Secura	blue	Twi'lek		
+51	72BBY	brown	The Phantom Menace, Attack of the Clones, Revenge of the Sith	male	none	188	Haruun Kal	84	Mace Windu	dark			
+50	unknown	orange	The Phantom Menace	male	none	163	Tund	65	Ben Quadinaros	grey, green, yellow	Toong		
+58	22BBY	black	The Phantom Menace, Revenge of the Sith	male	none	188	Dorin	80	Plo Koon	orange	Kel Dor	Jedi starfighter	
+52	92BBY	yellow	The Phantom Menace, Attack of the Clones, Revenge of the Sith	male	white	198	Cerea	82	Ki-Adi-Mundi	pale	Cerean		
+62	82BBY	blue	Attack of the Clones	male	brown	183	\N	unknown	Cliegg Lars	fair			
+2	112BBY	yellow	A New Hope, The Empire Strikes Back, Return of the Jedi, The Phantom Menace, Attack of the Clones, Revenge of the Sith	n/a	n/a	167	Tatooine	75	C-3PO	gold	Droid		
+8	unknown	red		n/a	n/a	97	Tatooine	32	R5-D4	white, red	Droid		
+16	600BBY	orange	A New Hope, Return of the Jedi, The Phantom Menace	hermaphrodite	n/a	175	Nal Hutta	1,358	Jabba Desilijic Tiure	green-tan, brown	Hutt		
+31	unknown	black	Return of the Jedi	male	none	160	Sullust	68	Nien Nunb	grey	Sullustan	Millennium Falcon	
+39	unknown	blue	The Phantom Menace	male	brown	183	Naboo	unknown	Ric Olié	fair		Naboo Royal Starship	
+45	unknown	pink	Return of the Jedi	male	none	180	Ryloth	unknown	Bib Fortuna	pale	Twi'lek		
+38	unknown	orange	The Phantom Menace	male	none	206	Naboo	unknown	Rugor Nass	green	Gungan		
+44	54BBY	yellow	The Phantom Menace	male	none	175	Dathomir	80	Darth Maul	red	Zabrak	Scimitar	Sith speeder
+76	unknown	unknown	Attack of the Clones	male	none	193	Skako	48	Wat Tambor	green, grey	Skakoan		
+67	102BBY	brown	Attack of the Clones, Revenge of the Sith	male	white	193	Serenno	80	Dooku	fair	Human		Flitknot speeder
+82	unknown	white	Attack of the Clones, Revenge of the Sith	female	none	178	Umbara	48	Sly Moore	pale			
+81	unknown	brown	A New Hope, Revenge of the Sith	male	brown	188	Alderaan	79	Raymus Antilles	light			
+75	unknown	red, blue	Attack of the Clones, Revenge of the Sith	female	none	96	unknown	unknown	R4-P17	silver, red			
+54	unknown	brown	The Phantom Menace, Revenge of the Sith	male	black	171	Iridonia	unknown	Eeth Koth	brown	Zabrak		
+66	unknown	brown	Attack of the Clones	female	brown	165	\N	unknown	Dormé	light	Human		
+80	unknown	blue	Revenge of the Sith	male	brown	234	Kashyyyk	136	Tarfful	brown	Wookie		
+77	unknown	gold	Attack of the Clones	male	none	191	Muunilinst	unknown	San Hill	grey	Muun		
+79	unknown	green, yellow	Revenge of the Sith	male	none	216	Kalee	159	Grievous	brown, white	Kaleesh	Belbullab-22 starfighter	Tsmeu-6 personal wheel bike
+78	unknown	black	Attack of the Clones, Revenge of the Sith	female	none	178	Shili	57	Shaak Ti	red, blue, white	Togruta		
+73	unknown	black	Attack of the Clones	female	none	213	Kamino	unknown	Taun We	grey	Kaminoan		
+34	91BBY	blue	The Phantom Menace	male	blond	170	Coruscant	unknown	Finis Valorum	fair			
+42	62BBY	brown	The Phantom Menace	male	black	183	Naboo	unknown	Quarsh Panaka	dark			
+43	72BBY	brown	The Phantom Menace, Attack of the Clones	female	black	163	Tatooine	unknown	Shmi Skywalker	fair			
+49	unknown	black	The Phantom Menace	male	none	122	Troiken	unknown	Gasgano	white, blue	Xexto		
+53	unknown	black	The Phantom Menace, Attack of the Clones, Revenge of the Sith	male	none	196	Glee Anselm	87	Kit Fisto	green	Nautolan		
+56	unknown	orange	The Phantom Menace, Revenge of the Sith	male	none	188	Iktotch	unknown	Saesee Tiin	pale	Iktotchi		
+48	unknown	yellow		male	none	94	Vulpter	45	Dud Bolt	blue, grey	Vulptereen		
+60	unknown	brown	Attack of the Clones	male	black	185	Naboo	85	Gregar Typho	dark		Naboo fighter	
+61	unknown	brown	Attack of the Clones	female	brown	157	Naboo	unknown	Cordé	light			
+63	unknown	yellow	Attack of the Clones, Revenge of the Sith	male	none	183	Geonosis	80	Poggle the Lesser	green	Geonosian		
+65	40BBY	blue	Attack of the Clones	female	black	166	Mirial	50	Barriss Offee	yellow	Mirialan		
+69	66BBY	brown	Attack of the Clones	male	black	183	Concord Dawn	79	Jango Fett	tan			
+55	unknown	blue	The Phantom Menace, Revenge of the Sith	female	none	184	\N	50	Adi Gallia	dark	Tholothian		
+64	58BBY	blue	Attack of the Clones, Revenge of the Sith	female	black	170	Mirial	56.2	Luminara Unduli	yellow	Mirialan		
+68	67BBY	brown	Attack of the Clones, Revenge of the Sith	male	black	191	Alderaan	unknown	Bail Prestor Organa	tan	Human		
+70	unknown	yellow	Attack of the Clones	female	blonde	168	Zolan	55	Zam Wesell	fair, green, yellow	Clawdite		Koro-2 Exodrive airspeeder
+74	unknown	blue	Attack of the Clones	female	white	167	Coruscant	unknown	Jocasta Nu	fair	Human		
+72	unknown	black	Attack of the Clones	male	none	229	Kamino	88	Lama Su	grey	Kaminoan		
+71	unknown	yellow	Attack of the Clones	male	none	198	Ojom	102	Dexter Jettster	brown	Besalisk		
 \.
 
 
